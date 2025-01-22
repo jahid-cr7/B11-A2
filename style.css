@@ -231,6 +231,7 @@ main {
   background-image: url(./assets/bg.png);
   height: auto;
   margin: 0px auto;
+  width: 100%;
 }
 .content {
   margin-top: 60px;
@@ -376,8 +377,7 @@ main {
 }
 @media screen and (max-width: 576px) {
   .bg {
-    /* width: 610px; */
-    width: 100%;
+    width: 610px;
   }
   .box-container {
     flex-direction: column;
@@ -398,10 +398,10 @@ main {
     linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
   height: 1018.02px;
 }
-/* .bg-story {
-  width: 100%;
+.bg-story {
+  width: auto;
   padding: 0px 140px;
-} */
+}
 /* .first-box {
   width: 540px;
   height: 337px;
@@ -571,15 +571,15 @@ main {
   position: relative;
   background: #ffffff;
   height: 310px;
-  width: 80%;
+  width: 290px;
   border-radius: 16px;
 }
 .stories-subprimary-card-2 img {
   border-radius: 16px 16px 0px 0px;
-  width: 100%;
 }
 .padding-1 {
-  padding: 25px;
+  padding-left: 50px;
+  padding-top: 30px;
 }
 .bttn {
   text-align: center;
@@ -587,14 +587,28 @@ main {
   background: none;
   margin-top: 60px;
 }
+.see-all {
+  color: rgb(255, 255, 255);
+  font-family: Quicksand;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0%;
+
+  border-radius: 12px;
+  padding: 7px 45px;
+  /* Black */
+  margin: auto;
+  border: none;
+  background: rgb(17, 17, 17);
+  
+}
+.see-all{
+  margin-top: 80px;
+  margin-left: 500px;
+}
 
 @media screen and (max-width: 576px) {
-  .stories-subprimary-card-2-1 {
-    position: relative;
-  }
-  .bg-story {
-    width: 100%;
-  }
   .stories-subprimary-card-1 {
     display: none;
   }
@@ -605,18 +619,13 @@ main {
     margin: 0, auto;
     display: block;
   }
-  .btn-2, .btn-3, .btn-4, .btn-5{
-    position: absolute;
-    margin-top: -35px;
-    margin-left: -20px;
-  }
 
   .stories-subprimary img {
     width: 100%;
   }
   .stories {
-    /* height: 950px;
-    width: 610px; */
+    height: 950px;
+    width: 610px;
     justify-items: left;
     padding-left: 20px;
     padding-right: 20px;
@@ -624,11 +633,10 @@ main {
   .stories-primary h1 {
     padding-left: 100px;
   }
-  .bttn {
-    text-align: center;
-    margin-top: 60px;
-    padding-left: 100px;
-    display: block;
+  .see-all{
+    margin-left: 220px;
+    margin-top: 550px;
+  }
   }
   .button {
     background: black;
@@ -639,7 +647,6 @@ main {
     font-weight: bold;
     border-radius: 12px;
   }
-
   .btn-2:hover {
     background: blueviolet;
   }
@@ -651,6 +658,10 @@ main {
   }
   .btn-5:hover {
     background: blueviolet;
+  }
+  .see-all{
+
+    
   }
 }
 
@@ -812,7 +823,7 @@ main {
   }
   .bg-story {
     padding: 10px;
-    width: 100%;
+    width: 610px;
   }
   .story-two {
     width: 240.09px;
@@ -902,11 +913,11 @@ main {
 @media screen and (max-width: 576px) {
   .bg-footer {
     padding: 66px 16px;
-    width: 100%;
+    width: 598px;
   }
 
   footer {
-    width: 100%;
+    /* width: 100%; */
     height: auto;
   }
   .full-content {
